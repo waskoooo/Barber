@@ -1,0 +1,244 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2024 waskoooo
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+  * colors
+  */ 
+  --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
+  --rich-black-fogra-39: hsl(0, 0%, 5%);
+  --indian-yellow_10: hsla(36, 61%, 58%, 0.1);
+  --indian-yellow: hsl(36, 61%, 58%);
+  --harvest-gold: hsl(36, 66%, 53%);
+  --eerie-black-1: hsl(0, 0%, 14%);
+  --eerie-black-2: hsl(0, 0%, 12%);
+  --eerie-black-2_85: hsla(0, 0%, 12%, 0.85);
+  --eerie-black-3: hsl(0, 0%, 8%);
+  --sonic-silver: hsl(0, 0%, 44%);
+  --davys-gray: hsl(210, 9%, 31%);
+  --light-gray: hsl(0, 0%, 80%);
+  --platinum: hsl(0, 0%, 91%);
+  --black_30: hsla(0, 0%, 0%, 0.3);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --white_30: hsla(0, 0%, 100%, 0.3 );
+  --white_50: hsla(0, 0%, 100%, 0.5);
+  --white: hsl(0, 0%, 100%);
+  --jet: hsl(0, 0%, 21%);
+
+  /**
+  * typography
+  */ 
+
+  --ff-oswald : 'Oswald', sans-serif;
+  --ff-rubik: 'Rubik', sans-serif;
+
+  --fs-40: 4rem;
+  --fs-30: 3rem;
+  --fs-24: 2.4rem;
+  --fs-18: 1.8rem;
+  --fs-14: 1.4rem;
+  --fs-13: 1.3rem;
+
+  --fw-300: 300;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /**
+  *spacing
+  */
+
+  --section-padding: 80px;
+
+  /**
+  * shadow
+  */
+
+  --shadow-1: 10px 0 60px hsla(0, 0%, 15%, 0.07);
+  --shadow-2: 10px 0 60px hsla(0, 0%, 15%, 0.1);
+
+  /**
+  * radius
+  */
+
+  --radius-5: 5px;
+  --radius-8: 8px;
+
+  /**
+  * transition
+  */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none ;}
+
+a,
+img,
+span,
+data,
+input,
+select,
+button,
+textarea,
+ion-icon { display: block;}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {height: auto;}
+
+input,
+select,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+select,
+textarea { width: 100%;}
+
+button {cursor: pointer;}
+
+ion-icon { pointer-events: none; }
+
+address { font-style: normal; }
+
+html {
+  font-family: var(--ff-rubik);
+  font-size: 10px;
+  scroll-behavior: smooth ;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--sonic-silver);
+  font-size: 1.6rem;
+  line-height: 2;
+  height: 300vh;
+}
+
+:focus-visible { outline-offset: 4px;}
+
+::-webkit-scrollbar { width: 10px;}
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%);}
+
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%);}
+
+::-webkit-scrollbar-thumb:hover {background-color: hsl(0, 0%, 70%);}
+
+
+
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #PRICING
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #GALLERY
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #APPOINTMENT
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
