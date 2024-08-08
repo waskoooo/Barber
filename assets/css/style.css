@@ -193,6 +193,60 @@ body {
 }
 
 
+.h1,
+.h2,
+.h3 {
+  font-family: var(--ff-oswald);
+  line-height: 1.3;
+}
+  
+.h1,
+.h2 { text-transform: uppercase;}
+
+.h1,
+.h3 { font-weight: var(--fw-700);}
+
+.h1 {
+  color: var(--white);
+  font-size: var(--fs-18)
+}
+
+.h2,
+.h3 { color: var(--eerie-black-1); }
+
+.h2 { font-size: var(--fs-30);}
+
+.h3 { font-size: var(--fs-24);}
+
+.btn {
+  color: var(--white);
+  background-color: var(--indian-yellow);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  padding: 10px 25px;
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+}
+
+.btn::before {
+  background-color: var(--eerie-black-1);
+  inset: 0;
+  z-index: -1;
+  transform: skewY(-10deg) scaleY(0);
+  transition: var(--transition-2);
+}
+
+.btn:is(:hover, :focus) { transform: skewY(-5deg) scaleY(1);}
+
+
+
+
 
 /*-----------------------------------*\
   #HEADER
@@ -317,7 +371,23 @@ body {
   #HERO
 \*-----------------------------------*/
 
+.hero {
+  --section-padding: 100px;
+  padding-block-start: calc(var(--section-padding) + 40px);
+  background-position: left;
+}
 
+.hero::before {
+  inset: 0;
+  background-color: var(--rich-black-fogra-39_50);
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+.hero-text {
+  color: var(--white);
+  margin-block: 15px 15px;
+}
 
 
 
