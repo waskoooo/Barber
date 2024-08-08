@@ -151,7 +151,6 @@ body {
   color: var(--sonic-silver);
   font-size: 1.6rem;
   line-height: 2;
-  height: 300vh;
 }
 
 :focus-visible { outline-offset: 4px;}
@@ -172,6 +171,26 @@ body {
 \*-----------------------------------*/
 
 .container { padding-inline: 15px; }
+
+.section { padding-block: var(--section-padding);}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has.before::before,
+.has-after::after {
+  position: absolute;
+  content: "";
+}
+
+.has-bg-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 
