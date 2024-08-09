@@ -244,7 +244,12 @@ body {
 
 .btn:is(:hover, :focus) { transform: skewY(-5deg) scaleY(1);}
 
+.text-center { text-align: center;}
 
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
 
 
 
@@ -308,7 +313,7 @@ body {
 .logo {
   color: var(--indian-yellow);
   font-family: var(--ff-oswald);
-  font-size: 2.7rem;
+  font-size: 4.5rem;
   font-weight: var(--fw-600);
   text-transform: uppercase;
   line-height: 1.6;
@@ -317,7 +322,7 @@ body {
 .logo span {
   color: var(--white);
   font-family: var(--ff-rubik);
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: var(--fw-300);
   text-transform: capitalize;
   letter-spacing: 2p;
@@ -395,6 +400,49 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
+.service { text-align: center;}
+
+.service .section-text { margin-block: 15px 55px;}
+
+.service-card {
+  background-color: var(--white);
+  padding: 30px 20px;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius-8);
+}
+
+.service-card .card-icon {
+  color: var(--indian-yellow);
+  font-size: 45px;
+  line-height: 1;
+}
+
+.service-card .card-title {
+  margin-block: 10px 8px;
+  transition: var(--transition-1);
+}
+
+
+.service-card .card-title:is(:hover, :focus ) { color: var(--indian-yellow);}
+
+.service-card .card-text { margin-block-end: 30pxpx;}
+
+.service-card .card-btn {
+  color: var(--indian-yellow);
+  background-color: var(--white);
+  max-width: max-content;
+  margin-inline: auto;
+  font-size: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-3);
+  border-radius: var(--radius-5);
+  transition: var(--transition-2);
+}
+
+.service-card:is(:hover, :focus-within) .card-btn {
+  background: var(--indian-yellow);
+  color: var(--white);
+}
 
 
 
