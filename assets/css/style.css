@@ -324,16 +324,16 @@ body {
 .logo {
   color: var(--indian-yellow);
   font-family: var(--ff-oswald);
-  font-size: 4.5rem;
+  font-size: 4.6rem;
   font-weight: var(--fw-600);
   text-transform: uppercase;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .logo span {
   color: var(--white);
   font-family: var(--ff-rubik);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: var(--fw-300);
   text-transform: capitalize;
   letter-spacing: 2p;
@@ -341,7 +341,7 @@ body {
 
 .nav-toggle-btn {
   color: var(--white);
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .navbar {
@@ -373,8 +373,9 @@ body {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-600);
   text-transform: uppercase;
-  line-height: 1.5;
-  padding: 10px 30px;
+  line-height: 1;
+  padding: 5px 15px;
+  font-size: 14px;
   transition: var(--transition-1)
 }
 
@@ -390,10 +391,18 @@ body {
 .hero {
   --section-padding: 100px;
   padding-block-start: calc(var(--section-padding) + 40px);
-  background-position: left;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease-in-out;
 }
 
 .hero::before {
+  inset: 0;
+  position: absolute;
   inset: 0;
   background-color: var(--rich-black-fogra-39_50);
   mix-blend-mode: multiply;
@@ -402,8 +411,13 @@ body {
 
 .hero-text {
   color: var(--white);
-  margin-block: 15px 15px;
+  margin-block: 20x 20px;;
 }
+
+.hero-title {
+  font-size: 45px;
+}
+
 
 
 
@@ -699,6 +713,125 @@ textarea.input-field {
   #FOOTER
 \*-----------------------------------*/
 
+.footer {
+  background-color: var(--eerie-black-2);
+  padding-block-end: 30px;
+}
+
+.footer-top { 
+  margin-block-end: 80px;
+}
+
+.footer-brand {
+  border: 1px solid var(--white_10);
+  margin-block-end: 90px;
+}
+
+.footer .logo {
+  text-align: center;
+  font-size: 52px;
+  padding: 40px;
+  border-block-end: 1px solid var(--white_10);
+}
+
+.footer .input-wrapper {
+  background-color: var(--white);
+  position: relative;
+  margin: 25px;
+  padding: 15px;
+}
+
+.footer .input-wrapper:focus-within {
+  outline: 3px solid var(--white_30);
+}
+
+.footer-link-box {
+  display: grid;
+  gap: 50px;
+}
+
+.footer-list-title {
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  margin-block-end: 30px;
+}
+
+.footer-link::before {
+  position: static;
+  padding: 2.5px;
+  background-color: var(--white_30);
+  display: block;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.footer-link,
+.card-date,
+.footer-last-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  color: var(--white_50);
+  gap: 10px;
+  margin-block-start: 8px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--white);
+}
+
+.footer-link:is(:hover, :focus)::before {
+  background-color: var(--white);
+}
+
+.card-date {
+  gap: 5px;
+  font-size: var(--fs-13);
+  text-transform: uppercase;
+  color: var(--white_50);
+}
+
+.card-date ion-icon { --ionicon-stroke-width: 50px; }
+
+.footer-list-item {
+  align-items: flex-start;
+  gap: 10px;
+  margin-block-start: 10px;
+}
+
+.footer-list-item ion-icon {
+  color: var(--indian-yellow) !important;
+  font-size: 18px;
+  flex-shrink: 0;
+  --ionicon-stroke-width: 50px;
+  margin-block: 7px;
+}
+
+.contact-link {
+  color: var(--white_50);
+  transition: var(--transition-1);
+}
+
+a.contact-link:is(:hover, :focus) {
+  color: var(--white);
+}
+
+.footer-bottom {
+  background-color: var(--eerie-black-3);
+  text-align: center;
+  padding: 15px;
+}
+
+.copyright-link {
+  display: inline-block;
+  color: var(--indian-yellow);
+}
 
 
 
@@ -707,10 +840,333 @@ textarea.input-field {
   #BACK TO TOP
 \*-----------------------------------*/
 
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--harvest-gold);
+  color: var(--white);
+  font-size: 30px;
+  padding: 5px;
+  border-radius: var(--radius-5);
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+}
 
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
 
 
 
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+@media (min-width: 575px) {
+  :root {
+    --fs-40: 6rem;
+  }
+
+  .container,
+  .header-top {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .btn {
+    padding: 13px 40px;
+  }
+
+  .h2 {
+    --fs-30: 3.5rem;
+  }
+
+  .header-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    z-index: 4;
+    background-color: var(--white);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .header-top-item:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-top-item ion-icon {
+    font-size: 18px;
+    color: var(--indian-yellow);
+    --ionicon-stroke-width: 50px;
+  }
+
+  .header-top-item .item-title {
+    color: var(--eerie-black-1);
+    font-weight: var(--fw-500);
+  }
+
+  .header-top-item .item-link {
+    transition: var(--transition-1);
+  }
+  .header-top-item .item-link:is(:hover, :focus) {
+    color: var(--indian-yellow);
+  }
+
+  .header-top-list {
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .logo .span {
+    font-size: 1.4rem;
+  }
+
+  
+  /**
+  *HERO
+  */
+
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 80px);
+  }
+
+  .hero-text {
+    font-size: var(--fs-18);
+  }
+
+  /** ALL Services */
+
+  .filter-btn .btn-icon {
+    display: block;
+    font-size: 55px;
+    line-height: 1;
+    margin-block-end: 5px;
+  }
+
+  .pricing-card {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .pricing-card .wrapper {
+    order: 0;
+  }
+
+  .pricing-card .card-price {
+    align-self: flex-start;
+    line-height: 1.6;
+  }
+
+  /**Gallery*/
+
+  .gallery .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**Appointment*/
+
+  .appoin-card .card-content {
+    padding-inline: 50px;
+  }
+
+  /**FOOTER*/
+
+  .footer {
+    margin-block-end: 0;
+    text-align: left;
+    font-size: var(--fs-18);
+    padding: 10px 15px;
+    padding-inline-end: 210px;
+  }
+
+  .footer-link-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-list:is(:nth-child(3), :nth-child(4)) {
+    grid-column: 1 / 3;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-40: 8rem;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  .section-text {
+    max-width: 50ch;
+    margin-inline: auto;
+  }
+
+
+  .header-top {
+    max-width: 780px;
+  }
+
+  .service .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-tab-container {
+    padding: 40px;
+  }
+
+  .pricing-card .wrapper {
+    margin-inline-end: auto;
+  }
+
+  .gallery .section-text { margin-inline: 0; }
+
+  .gallery-card .card-content { inset: 30px; }
+
+
+  /**APPOINTMENT*/
+
+  .appoin-card .card-banner { display: block; }
+
+  .appoin-card { display: flex; }
+
+  .footer-list:is(:nth-child(3), :nth-child(4)) {
+    grid-column: auto;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+
+  :root {
+    --fs-40: 10rem;
+  }
+
+  .container {max-width: 960px;}
+
+  /**HEADER*/
+
+  .nav-toggle-btn { display: none; }
+
+  .header-top { max-width: 1020px; }
+
+  .header-bottom { padding-block: 20px; }
+
+  .navbar, 
+  .navbar-list, 
+  .navbar-item { all: unset;}
+
+  .navbar-list, 
+  .header .btn { display: flex; }
+
+  .navbar-link { padding-inline: 10px; }
+
+
+  /**HERO*/
+
+  .hero-title,
+  .hero-text { max-width: 600px; }
+
+/**Service*/
+
+  .service .grid-list { grid-template-columns: repeat(3, 1fr);}
+
+
+  /**ALL SERVICES*/
+
+  .pricing .grid-list { grid-template-columns: 1fr 1fr; }
+
+  .pricing-card { height: 90%; }
+
+  .pricing-card .card-banner { flex-shrink: 0; }
+
+
+  /**Gallery*/
+
+  .gallery .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .gallery .section-text { margin-block-end: 0; }
+
+  /**APPOINTMENT*/
+
+  .footer .logo {
+    padding: 60px 70px;
+    border-block-end: none;
+    border-inline-end: 1px solid var(--white_10);
+  }
+
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --fs--40: 11rem;
+    --section-padding: 120px;
+  }
+
+  .container { max-width: 1200px; }
+
+
+  /**HEADER*/
+
+  .header-top { max-width: 1260px; }
+
+  .header-top-list { gap: 30px; }
+
+  .header-top-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-top-item:nth-child(2) { margin-inline-end: auto; }
+
+  /**HERO*/
+
+  .hero {
+    background-position: left;
+    padding-block-end: 200px;
+  }
+
+  .here-title,
+  .hero-text { max-width: 680px; }
+
+
+  /**ALL SERVICES*/
+
+  .filter-btn { min-width: 178px; }
+
+
+  /**GALLERY*/
+
+  .gallery .grid-list { grid-template-columns: repeat(4, 1fr); }
+
+  /**APPOINTMENT*/
+
+  .appoin-card .card-content { flex-grow: 1; }
+
+  /**back to top*/
+
+  .back-top-btn { padding: 15px; }
+
+}

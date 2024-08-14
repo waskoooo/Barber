@@ -25,7 +25,11 @@
     <link rel="stylesheet" href="./assets/css/flaticon.min.css">
 </head>
 
-<body>
+<!--preload images-->
+
+    <link rel="preload"as="image" href="./assets/images/hero-banner.jpg">
+
+<body id="top">
 
     <!-- Header -->
     <header class="header">
@@ -77,7 +81,7 @@
                             <a href="#services" class="navbar-link" data-nav-link>Услуги</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="#pricing" class="navbar-link" data-nav-link>Ценоразпис</a>
+                            <a href="#pricing" class="navbar-link" data-nav-link>Видове Услуги</a>
                         </li>
                         <li class="navbar-item">
                             <a href="#gallery" class="navbar-link" data-nav-link>Галерия</a>
@@ -136,7 +140,7 @@
 
                     <p class="section-text text-center"></p>
 
-                    <ul class="=grid-list">
+                    <ul class="grid-list">
 
                         <li>
                             <div class="service-card">
@@ -267,26 +271,7 @@
                             </div>
                         </li>
 
-                        <li>
-                            <div class="service-card">
-
-                                <div class="card-icon">
-                                    <i class="flaticon-salon"></i>  
-                                </div>
-
-                                <h3 class="h3">
-                                    <a href="#" class="card-title">Други</a>
-                                </h3>
-                                
-                                
-                                
-
-                                <a href="#" class="card-btn" aria-label="more">
-                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                </a>
-
-                            </div>
-                        </li>
+                        
 
                     </ul>
 
@@ -536,9 +521,9 @@
 
                     <div class="card-content">
 
-                      <h3 class="h3 card-title">Подстригване</h3>
+                      <h3 class="h3 card-title">Barbershop</h3>
 
-                      <p class="card-text">Barber$hop by Kadirov</p>
+                      <p class="card-text">by Kadirov</p>
 
                       <a href="#" class="card-btn" aria-label="Read more">
                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -557,9 +542,9 @@
 
                     <div class="card-content">
 
-                      <h3 class="h3 card-title">Подстригване</h3>
+                      <h3 class="h3 card-title">Barbershop</h3>
 
-                      <p class="card-text">Barber$hop by Kadirov</p>
+                      <p class="card-text">by Kadirov</p>
 
                       <a href="#" class="card-btn" aria-label="Read more">
                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -578,9 +563,9 @@
 
                     <div class="card-content">
 
-                      <h3 class="h3 card-title">Подстригване</h3>
+                      <h3 class="h3 card-title">Barbershop</h3>
 
-                      <p class="card-text">Barber$hop by Kadirov</p>
+                      <p class="card-text">by Kadirov</p>
 
                       <a href="#" class="card-btn" aria-label="Read more">
                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -744,15 +729,55 @@
                 </address>
               </li>
 
+              <li class="footer-list-item">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                <a href="тел: 0896032016" class="contact-link">0896 032 016</a>
+              </li>
+
+              <li class="footer-list-item">
+                
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                <span class="contact-link"> Сряда - Понеделник, 10:00 - 19:00</span>
+
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                <a href="https://github.com/waskoooo" class="contact-link" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </li>
+              
+              
+
+
             </ul>
 
           </div>
 
         </div>
 
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 <a href="#" class="copyright-link">GitHub:waskoooo</a> All Rights Reserved.
+          </p>
+        </div>
+
+
       </div>
 
     </footer>
+
+
+    <!--BACK TO TOP-->
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
 
 
 
