@@ -87,4 +87,4 @@ const filter = function () {
   }
 }
 
-addEventOnElem(filterBtns, "click", filter);
+
