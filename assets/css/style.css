@@ -383,6 +383,13 @@ body {
 
 
 
+.client-logo {
+  max-height: 145px;
+  margin-left: 5px;
+  width: auto;
+}
+
+
 
 /*-----------------------------------*\
   #HERO
