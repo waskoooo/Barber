@@ -1051,6 +1051,11 @@ a.contact-link:is(:hover, :focus) {
 
   .gallery-card .card-content { inset: 30px; }
 
+  .client-logo {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
 
   /**APPOINTMENT*/
 
