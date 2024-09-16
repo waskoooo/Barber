@@ -385,7 +385,7 @@ body {
 
 .client-logo {
   max-height: 145px;
-  margin-left: 5px;
+  margin-left: 1px;
   width: auto;
 }
 
@@ -845,6 +845,11 @@ a.contact-link:is(:hover, :focus) {
   color: var(--indian-yellow);
 }
 
+.footer-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
 
 
 
@@ -1065,6 +1070,10 @@ a.contact-link:is(:hover, :focus) {
 
   .footer-list:is(:nth-child(3), :nth-child(4)) {
     grid-column: auto;
+  }
+
+  .footer-map iframe {
+    height: 200px;
   }
 
 }
